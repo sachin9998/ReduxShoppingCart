@@ -21,14 +21,14 @@ const Products = () => {
 		// 	setProducts(data);
 		// };
 		// fetchProducts();
-	}, []);
+	}, [dispatch]);
 
 	if (status === STATUSES.LOADING) {
 		return <Loader />;
 	}
 
 	if (status === STATUSES.LOADING) {
-		return <h2>Something went wrong!!!</h2>
+		return <h2>Something went wrong!!!</h2>;
 	}
 
 	return (
